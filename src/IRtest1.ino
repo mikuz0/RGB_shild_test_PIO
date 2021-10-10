@@ -16,18 +16,35 @@ if ( IRLremote.available()) { // если данные пришли
 
  #endif
 switch ( IRdata ) {
-case 0xE207E1AD:
+case BUTT_UP:
 #if (USE_LOG == 1)
 Serial.println("CH+");
 #endif
 digitalWrite(BUILTIN, HIGH); 
 break;
-case 0x4E5BA3AD :
+case BUTT_DOWN :
 #if (USE_LOG == 1)
 Serial.println("CH-");
 #endif
 digitalWrite(BUILTIN, LOW); 
 break;
+
+case BUTT_0:
+eff=0;
+break;
+case BUTT_1:
+eff=1;
+break;
+case BUTT_2:
+eff=2;
+break;
+case BUTT_3:
+eff=3;
+break;
+case BUTT_4:
+eff=4;
+break;
+
 }
 
 }

@@ -16,6 +16,25 @@
 
 #if (USE_IR == 1)
 #define IR_PIN 2 // указываем вывод, к которому подключен приемник
+// ----- КНОПКИ ПУЛЬТА CAR mp3 -----
+#define BUTT_UP 0xE207E1AD // CH+
+#define BUTT_DOWN 0x4E5BA3AD // CH-
+#define BUTT_LEFT 0x517068AD // <<
+#define BUTT_RIGHT 0x1B92DDAD // >>
+#define BUTT_OK 0xDF3F4BAD // EQ
+#define BUTT_1 0x18319BAD // 1
+#define BUTT_2 0xF39EEBAD // 2
+#define BUTT_3 0x4AABDFAD // 3
+#define BUTT_4 0xE25410AD // 4
+#define BUTT_5 0x297C76AD // 5
+#define BUTT_6 0x14CE54AD // 6
+#define BUTT_7 0xAF3F1BAD // 7
+#define BUTT_8 0xC089F6AD // 8
+#define BUTT_9 0x38379AD // 9
+#define BUTT_0 0x68E456AD // ноль 
+#define BUTT_START 0xAC2A56AD // >||
+#define BUTT_HASH 0x151CD6AD
+
 
 #include "IRLremote.h"
 CHashIR IRLremote;
